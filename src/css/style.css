@@ -1,0 +1,834 @@
+ 
+        .menu-button {
+          position: fixed;
+          top: 0rem;
+          right: 1rem;
+          background-color: #624a3c;
+          border-radius: 50%;
+          border: none;
+          color: white;
+          cursor: pointer;
+          z-index: 20;
+          padding: 0.5rem;
+      }
+
+      .About-links,.links {
+          display: none;
+          position: fixed;
+          right: 1rem;
+          top: 4rem;
+          background: #624a3c;
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+          list-style-type: none;
+          z-index: 1001;
+      }
+      .About-links ul,.links ul{
+        list-style: none;
+      }
+
+      .About-links.active ,.links.active {
+          display: block;
+      }
+
+      .About-links li ,.links li{
+          margin-bottom: 0.5rem;
+      }
+
+      .About-links a, .links a {
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          display: block;
+          padding: 0.5rem 0.5rem;
+      }
+ 
+ 
+ /*common to all */
+  body{
+    font-family: arial;
+    background-color:#FFFCFA;
+    line-height: 1.5em;
+  }
+  #extra{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    left: 0;
+    top: 0;
+    background: #E5DBD5;
+    border-bottom: 1px solid #857C77;
+  }
+  h1{
+    text-align: center;
+    font-size: 20px;
+    color: #261E1A;
+    line-height: 1.2em;
+  }
+  h2{
+    font-size: 17px;
+    color: #261E1A;
+    line-height: 1.2em;
+  }
+  h3{
+  font-size: 14px;
+  }
+  p,.skill li,.education li{
+    font-size: 12px;
+    color:#4D413B;
+    line-height: 2em;
+  }
+  a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    
+  }
+   /*about */
+    
+ 
+
+   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;  
+  }
+  
+  
+  .container img {
+    width: 100%;
+    height: 200px;  
+    margin: 10px 0;  
+  }
+  
+  .description {
+    width: 100%;  
+    max-width: 343px;  
+    text-align: justify;  
+    margin: 20px 0;
+    margin-left: 20px;  
+     
+  }
+  
+  /*cv*/
+   
+  .cv-main{
+   
+  width: 100%;
+  max-width: 350px;
+  margin-left: 20px;
+  margin-top: 107px;
+   }
+   /*footer section of cv*/
+   footer{
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 420px;
+    max-width: 700px;
+    height: 88px;
+    margin-left: -20px;
+    padding-right: 120px;
+   background: #E5DBD5;
+   border: 1px solid #857C77;
+
+   }
+   footer h3{
+   
+ 
+  margin-left: 50px;
+   
+   }
+   
+  footer ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: -35px;
+    gap: 20px;
+    
+  }
+   
+  footer img{
+    height:14px;
+    width:14px;
+  }
+  .phone{
+    margin-left: 40px;
+    margin-top: -60px;
+  }
+  .num{
+    margin-top: -10px;
+  }
+  /*interest and hobbies*/
+      
+.extra{
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #261E1A;
+}
+/* interest Title */
+.p{
+margin-left: -50px;
+}
+.c{
+  margin-left: -100px;
+}
+.w{
+  margin-left: -10px;
+}
+
+/* Image Collection */
+.image-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+/* Photo section */
+.photo {
+  width: 100%;
+  max-width: 375px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Video element */
+video {
+  width: 100%;
+  max-width: 163px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Image element */
+.photo img {
+  width: 100%;
+  max-width: 163px;
+  height: 139px;
+  margin-bottom: 10px;
+}
+
+ 
+ 
+
+/* Description Text */
+.image-collection p {
+  text-align: left;
+  width: 100%;
+  max-width: 235px;
+  margin-left:75px;
+}
+
+/* Additional styling for specific sections */
+.photo:nth-child(1) video {
+  width: 163px;
+  height: 139px;
+}
+
+.photo:nth-child(2) video {
+  width: 163px;
+  height: 138px;
+}
+
+ 
+  
+ 
+/* responsive */
+@media (min-width: 1024px) {
+  
+    h1{
+      font-size: 48px
+    }
+    h2{
+      font-size:35px;
+    }
+    h3,p,.skill li,.education li,a{
+      font-size: 20px;
+    }
+ 
+  /*About css for pc*/
+  /*links*/
+  
+   
+  .menu-button  {
+    display: none;
+   }
+   .About-links ,.links{
+    display: block;  
+    position: static; 
+    background: transparent;  
+    padding: 0;
+    width: 100%;
+  }
+  .About-links ul ,.links{
+
+    display: flex;
+    margin-left: 600px;
+    padding: 30px 0px;
+    margin-top:-30px;
+    list-style: none;
+  }
+  .About-links a , .links a{
+    text-decoration: none;
+    color: #624A3C;
+   
+    padding: 10px 35px;
+  }
+  .About-links a:hover,.links a:hover{
+ text-decoration: underline;
+    transition: 0.5s;
+    
+  }
+   
+   /* main section*/
+   .About-header{
+    position: absolute;
+    left: 595px;
+    top: 160px;
+ }
+   
+  .container{
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .container img{
+    height: auto;
+    max-width: 500px;
+    margin-right:40px ;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .description p{
+    line-height: 1.6em;
+    min-width: 550px;
+    margin-top: 150px;
+    margin-left: -20px;
+  }
+
+  /*cv css for pc*/
+  /* header link */
+  .links {
+    margin-left: 830px;
+   }
+   /*main section*/
+  .cv-main{
+    margin-left: 100px;
+    max-width: 1000px;
+    margin-bottom: 100px;
+  }
+  
+   
+  /*footer*/
+  footer{
+    box-sizing: border-box;
+     width: 100%;
+     min-width: 1280px;
+     max-width: 20000px;
+     height: 88px;
+     margin-left: -20px;
+     padding-right: 120px;
+    background: #E5DBD5;
+    border: 1px solid #857C77;
+    
+  }
+  footer h3{
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 33px;
+    margin-bottom: -120px;
+    margin-left: 100px;
+    font-weight: normal;
+  }
+  footer ul{
+   margin-left: 500px;
+    
+    padding: 10px 0px;
+    margin-top:-50px;
+    
+     
+  }
+  footer ul li{
+    margin-left: 20px;
+  }
+  footer img{
+    height:40px;
+    width:40px;
+  }
+  .num{
+    margin-top: -20px;
+  }
+  .phone{
+    margin-top: 10px;
+  }
+  /* interest and hobby*/
+ /* interest Title */
+.p{
+  margin-left: -100px;
+  }
+  .c{
+    margin-left: -200px;
+  }
+  .w{
+    margin-left: 0px;
+     
+  }
+  #w{
+    margin-left: -25px;
+  }
+  #k{
+    margin-top: 70px;
+  }
+  #kk{
+    margin-top: -55px;
+  }
+  #title{
+    padding-bottom: 50px;
+  }
+  /* Image Collection */
+  .image-collection {
+   
+    flex-direction: row;
+    margin: 0 50px ; 
+    margin-top: -80px;   
+  }
+  
+  /* Photo section */
+  .photo {
+    width: 100%;
+    max-width: 500px;
+    }
+  
+  /* Video element */
+  video {
+    max-width: 350px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  
+  /* Image element */
+  .photo img {
+    max-width: 500px;
+    height: 400px;
+    min-width: 300px;
+     
+  }
+  /* Description Text */
+  .image-collection p {
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    margin-left:0px;
+  }
+  
+  /* Additional styling for specific sections */
+  .photo:nth-child(1) video {
+    width: 400px;
+    height: 480px;
+    margin-top: -80px;
+    
+  }
+  
+  .photo:nth-child(2) video {
+    width: 500px;
+    height: 410px;
+    margin-top: -10px;
+   
+  }
+  
+   }
+     /* Styles for tablets in landscape orientation */
+   @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  
+    p{
+      font-size: 19px;
+    }
+    #extra{
+        min-width: 1500px;
+    
+    }
+    /*Home*/
+    .home-links{
+      margin-top: -300px;
+    }
+    .home-links a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     background-color: #624a3c;
+     border: 20px #624a3c;
+     border-radius:50%;
+     padding: 30px 20px;
+     
+    }
+     
+    .home-links li{
+      list-style: none;
+      padding-bottom: 300px;
+      margin-top: -180px;
+    }
+    /*About css for pc*/
+   /*links*/
+   .menu-button  {
+    display: none;
+   }
+   .About-links,.links {
+    display: block;  
+    position: static; 
+    background: transparent;  
+    padding: 0;
+    width: 100%;
+  }
+   .About-links ul ,.links{
+    display: flex;
+    margin-left: 350px;
+    padding: 30px 0px;
+    margin-top:-15px;
+    list-style: none;
+  }
+  .About-links a , .links a{
+    text-decoration: none;
+    color: #624A3C;
+   
+    padding: 10px 20px;
+  }
+  .About-links a:hover,.links a:hover{
+ text-decoration: underline;
+    transition: 0.5s;
+    
+  }
+  .About-links a:active,.links a:active{
+    background-color: #e0d7d2;
+  }
+   
+  .About-header{
+    position: absolute;
+width: 405px;
+height: 81px;
+left: 300px;
+top: 80px;
+  }
+   
+    .container{
+       display: inline;
+       
+     
+       
+    }
+    .container img {
+      float: left;
+      max-width: 200px;
+      margin-left: 60px;
+      margin-top: -60px;
+      margin-right: 20px;
+      border: 1px solid rgb(193, 190, 190);
+    }
+  
+    .description {
+  max-width: 700px;
+  line-height: 2em;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 60px;
+    }
+      /*cv main section*/
+      .links{
+        margin-left: 500px;
+      }
+  .cv-main{
+    margin-left: 100px;
+    max-width: 700px;
+  }
+  .phone{
+    margin-top: 2px;
+    margin-left: -5px;
+  }
+  footer{
+    min-width: 800px;
+  }
+   /*intrest and hobby*/
+   /* interest Title */
+   /* interest Title */
+.p{
+  margin-left: -400px;
+  }
+  .c{
+    margin-left: -445px;
+  }
+  .w{
+    margin-left: -360px;
+  }
+ 
+   .image-collection {
+   
+    align-items:flex-start; 
+    margin-left: 50px;
+  }
+  .photo {
+    width: 700px;  
+    display: flex;
+  }
+  /*navigation bar */
+ 
+   
+  .photo img,video {
+    min-width: 131px;
+   max-width: 131px;
+   min-height: 200px;
+   margin-right: 30px;
+    }
+   
+  .image-collection p {
+    text-align: left;
+    min-width: 500px;
+    margin-left:0px;
+    
+  }
+    /* Additional styling for specific sections */
+    .photo:nth-child(1) video {
+     
+      height: 300px;
+      margin-top: -20px;
+      
+    }
+    
+    
+  
+  }
+  
+  
+  
+  
+  
+    /* Your styles for phones in landscape mode */
+    @media screen and (orientation: landscape) and (max-width: 768px)  {
+   /* Basic styles for the 
+   
+      /*About page*/
+  #extra{
+    min-width: 800px;
+  }
+ 
+  .About-header{
+    position: absolute;
+width: 405px;
+height: 81px;
+left: 190px;
+top: 80px;
+  }
+   
+    .container{
+       display: inline;
+       
+     
+       
+    }
+    .container img {
+      height: auto;
+      float: left;
+      max-width: 240px;
+      margin-left: 60px;
+      margin-top: -60px;
+      margin-right: 20px;
+      border: 1px solid rgb(193, 190, 190);
+    }
+  
+    .description {
+  max-width:1000px;
+  min-width: 700px;
+  line-height: 2em;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 60px;
+  font-size: 12px;
+    }
+        /*cv main section*/
+   footer h3{
+    margin-left: 70px;
+     
+
+  }
+  .cv-main{
+    margin-left: 50px;
+    min-width: 700px;
+  }
+  footer{
+    min-width: 1000px;
+  }
+  .phone{
+    margin-top: 4px;
+    margin-left: -5px;
+  }
+    /* interest and hobbies*/
+    .image-collection {
+      align-items:flex-start; 
+      margin-left: 10px;
+    }
+    .photo {
+      width: 600px;  
+      display: flex;
+    }
+     
+    .photo img,video {
+     width: 150px;
+     height: 100px;
+     margin-right: 30px;
+      
+    }
+     .vid1{
+      height: 450px;
+      margin-top: -100px;
+    }
+    .photo:nth-child(1) video {
+      width: 150px;
+      height: 100px;
+     
+      
+    }
+    
+    .photo:nth-child(2) video {
+      width: 150px;
+      height: 100px;
+    
+     
+    }
+    /* Description Text */
+.image-collection p {
+   
+  max-width: 300px;
+  margin-left:20px;
+}
+
+    }
+    /*tab portrait*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      p,.skill li,.education li{
+        font-size: 19px;
+      }
+        /*About page*/
+  #extra{
+    min-width: 800px;
+  }
+    /*links*/
+    .menu-button{
+      display: none;
+    }
+    .About-links,.links {
+      display: block;  
+      position: static; 
+      background: transparent;  
+      padding: 0;
+      width: 100%;
+    }
+    .About-links ul ,.links{
+      display: flex;
+      margin-left: 350px;
+      padding: 30px 0px;
+      margin-top:-15px;
+      list-style: none;
+    }
+    .About-links a , .links a{
+      text-decoration: none;
+      color: #624A3C;
+     
+      padding: 10px 20px;
+    }
+    .About-links a:hover,.links a:hover{
+   text-decoration: underline;
+      transition: 0.5s;
+      
+    }
+    .About-links a:active,.links a:active{
+      background-color: #e0d7d2;
+    }
+     
+  .About-header{
+    position: absolute;
+width: 405px;
+height: 81px;
+left: 190px;
+top: 80px;
+  }
+   
+    .container{
+       display: inline;
+       
+     
+       
+    }
+    .container img {
+      height: auto;
+      float: right;
+      max-width: 240px;
+      margin-left: 60px;
+      margin-top: 8px;
+      margin-right: 20px;
+      border: 1px solid rgb(193, 190, 190);
+    }
+  
+  .description {
+  max-width:1000px;
+  min-width: 700px;
+  line-height: 2em;
+  text-align: left;
+  margin-top: 170px;
+  margin-left: 60px;
+  font-size: 19px !important;
+    }
+       /*cv main section*/
+       .links{
+        margin-left:500px;
+       }
+  .cv-main{
+    margin-left: 50px;
+    max-width: 600px;
+    font-size: 19px;
+  }
+  footer{
+    min-width: 800px;
+  }
+  .phone{
+    margin-top: 2px;
+    margin-left: -5px;
+  }
+  /*interest and hobby*/
+  .image-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin-left: -30px;
+    gap: 5px;
+}
+#code{
+  margin-left: 200px;
+  margin-top: 20px;
+}
+ 
+#walk{
+margin-top: 500px;
+}
+#hob{
+  margin-top: -200px;
+
+}
+.photo {
+  padding: 0px;
+}
+.photo img{
+  height: 200px;
+}
+  /* Additional styling for specific sections */
+   
+   
+    }
+
+
+
+ 

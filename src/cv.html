@@ -4,10 +4,17 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My CV</title>
-      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-      <header>
+    <body >
+      <header id="extra">
+        <button class="menu-button" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+      </button>
        <nav>
         <ul class="links">
           <li><a href="home.html" class="button">Home</a> </li>
@@ -15,9 +22,9 @@
           <li><a href="cv.html" class="button" > CV </a></li>
         </ul>
      </nav>
-    </header>
+    </header>   
    
-    <main>
+     <main  class="cv-main">
       <h1>CV</h1>
      <section class="objective">
         <h2>Objective</h2>
@@ -49,19 +56,20 @@
             <li>Database Management: SQL</li>
             <li>Soft Skills: Communication, Teamwork, Problem-Solving</li>
           </ul>
-    </section>
+     </section>
    </main>
-   <footer>
+   <footer class="cv-footer">
     <h3>Contact me</h3>
     <ul>
-      <li><a href="https://t.me/dagi125"><img src="img/telegram-icon.png" alt="telegram icon"></a></li>
-      <li><a href="https://github.com/dagi97"><img src="img/github-icon.png" alt="github icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/dagmawit-sisay-294123335/"><img src="img/linkedin-icon.png" alt="linkedin icon"></a></li>
-      <li><a href="mailto:dagmawitsisay97@gmail.com"><img src="img/email-icon.png" alt="email icon"></a></li>
-      <li><a href="https://leetcode.com/u/dagmawit_sisay/"><img src="img/leetcode-icon.png" alt="leetcode icon"></a></li>
-      <li><img src="img/phone-icon.png" alt="phone icon"> <p>+251925507053</p></li>
+      <li class="tg"><a href="https://t.me/dagi125"><img src="img/telegram-icon.png" alt="telegram icon"></a></li>
+      <li class="github"><a href="https://github.com/dagi97"><img src="img/github-icon.png" alt="github icon"></a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/in/dagmawit-sisay-294123335/"><img src="img/linkedin-icon.png" alt="linkedin icon"></a></li>
+      <li class="email"><a href="mailto:dagmawitsisay97@gmail.com"><img src="img/email-icon.png" alt="email icon"></a></li>
+      <li class="leetcode"><a href="https://leetcode.com/u/dagmawit_sisay/"><img src="img/leetcode-icon.png" alt="leetcode icon"></a></li>
+      <li class="phone"><img src="img/phone-icon.png" alt="phone icon" > <p class="num">+251925507053</p> </li>  
     </ul>
 
    </footer>
+   <script src="./js/script.js"></script>
    </body>
 </html>
